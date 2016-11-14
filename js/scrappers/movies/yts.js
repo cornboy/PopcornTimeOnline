@@ -2,7 +2,7 @@ fetcher.scrappers.yts = function(genre, keywords, page, callback){
 
 
 
-		var url = 'http://yts.to/api/list.json?genre=' + genre + '&sort_by=seeds&limit=50&set=' + ui.home.catalog.page;
+		var url = 'https://popapi.herokuapp.com/api/v2/list_movies.json?genre=' + genre + '&sort_by=seeds&limit=50&set=' + ui.home.catalog.page;
 
         if (keywords) {
             url += '&keywords=' + keywords;
